@@ -1,14 +1,14 @@
 import torch.nn as nn
-from algo.memory import ReplayMemory, Experience
+from memory import ReplayMemory, Experience
 
 
 
 import torch, os
 import numpy as np, random
 
-from algo.random_process import OrnsteinUhlenbeckProcess
-from algo.utils import soft_update, hard_update, device
-from algo.commnet.network import CommNetWork_Actor, CommNetWork_Critic
+from random_process import OrnsteinUhlenbeckProcess
+from utils import soft_update, hard_update, device
+from commnet.network import CommNetWork_Actor, CommNetWork_Critic
 
 class CommNet():
 

@@ -1,9 +1,9 @@
 import torch, os
 import numpy as np, random
 
-from algo.bicnet.network import Actor, Critic
-from algo.random_process import OrnsteinUhlenbeckProcess
-from algo.utils import soft_update, hard_update, device
+from bicnet.network import Actor, Critic
+from random_process import OrnsteinUhlenbeckProcess
+from utils import soft_update, hard_update, device
 
 class BiCNet():
 

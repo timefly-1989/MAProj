@@ -1,14 +1,14 @@
-from algo.maddpg.network import Critic, Actor
+from maddpg.network import Critic, Actor
 import torch
 from copy import deepcopy
 from torch.optim import Adam
-from algo.memory import ReplayMemory, Experience
-from algo.random_process import OrnsteinUhlenbeckProcess
+from memory import ReplayMemory, Experience
+from random_process import OrnsteinUhlenbeckProcess
 from torch.autograd import Variable
 import os
 import torch.nn as nn
 import numpy as np
-from algo.utils import device
+from utils import device
 scale_reward = 0.01
 
 

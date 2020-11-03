@@ -4,13 +4,13 @@ from tensorboardX import SummaryWriter
 import numpy as np
 import torch,os
 
-from algo.bicnet.bicnet_agent import BiCNet
-from algo.commnet.commnet_agent import CommNet
-from algo.maddpg.maddpg_agent import MADDPG
+from bicnet.bicnet_agent import BiCNet
+from commnet.commnet_agent import CommNet
+from maddpg.maddpg_agent import MADDPG
 
-from algo.normalized_env import ActionNormalizedEnv, ObsEnv, reward_from_state
+from normalized_env import ActionNormalizedEnv, ObsEnv, reward_from_state
 
-from algo.utils import *
+from utils import *
 from copy import deepcopy
 
 

@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 
-from algo.utils import weight_init
-from algo.utils import fanin_init
+from utils import weight_init
+from utils import fanin_init
 
 HIDDEN_DIM = 300
 
